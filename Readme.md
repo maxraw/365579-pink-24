@@ -1,7 +1,7 @@
-# Личный проект «Пинк» 
+# Личный проект «Пинк»
 
-* Студент: [Maxim Krasnobaev](https://up.htmlacademy.ru/adaptive/24/user/365579).
-* Наставник: `Неизвестно`.
+- Студент: [Maxim Krasnobaev](https://up.htmlacademy.ru/adaptive/24/user/365579).
+- Наставник: `Сергей Зубов`.
 
 ---
 

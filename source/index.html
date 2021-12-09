@@ -8,18 +8,18 @@
 
 <body>
   <header class="header">
-    <div class="header-logo" style="background-color: #283645;">
-      <a class="logo" href="index.html">
-        <img class="logo-img" src="img/pink-logo.svg" alt="logo" width="74" height="23">
+    <p class="header__logo">
+      <a class="logo">
+        <img class="logo__img" src="img/logotype-white.svg" alt="logo" width="145" height="40">
       </a>
-    </div>
+    </p>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="index.html">Главная</a>
+        <li class="site-list__item site-list__item--current">
+          <a>Главная</a>
         </li>
         <li class="site-list__item">
           <a href="catalog.html">Фотографии</a>
@@ -33,69 +33,61 @@
       </ul>
     </nav>
   </header>
-  <main class="main-index">
-    <article class="promo" style="background-color: #283645;">
-      <h1 class="main-title main-title__up">Взгляните на жизнь
-        иначе!</h1>
+  <main class="main">
+    <section class="promo">
+      <h1 class="promo__title main-title">Взгляните на жизнь иначе!</h1>
       <div class="apps">
-        <a class="button-apps" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
-        <div class="apps-logo">
-          <a class="apps-logo__apple" href="https://www.apple.com/ru/app-store/">
-            <svg width="47" height="56" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M39.245 29.74a12.09 12.09 0 0 0 2.127 6.787A12.668 12.668 0 0 0 47 41.063a29.794 29.794 0 0 1-4 7.96c-2.401 3.413-4.905 6.816-8.844 6.904-3.938.09-5.088-2.219-9.526-2.219-4.437 0-5.8 2.15-9.465 2.288-3.663.139-6.686-3.718-9.088-7.111-4.956-6.905-8.752-19.639-3.664-28.2a13.925 13.925 0 0 1 5.024-5.037 14.489 14.489 0 0 1 6.935-1.977c3.724-.069 7.246 2.427 9.526 2.427 2.28 0 6.564-3.009 11.062-2.565 2.084.073 4.121.613 5.954 1.576a13.387 13.387 0 0 1 4.61 3.977c-.275.168-6.31 3.571-6.249 10.653h-.03ZM31.978 8.936C34.16 6.46 35.238 3.247 34.981 0c-3.305.302-6.364 1.82-8.55 4.241-1.862 2.092-3.5 5.445-3.053 8.66 3.247.247 6.555-1.597 8.57-3.945"
-                fill="#fff" /></svg>
+        <a class="apps__download button" href="https://www.apple.com/ru/app-store/">
+          Скачать приложение
+        </a>
+        <div class="apps__wrapper">
+          <a class="apps__apple" href="https://www.apple.com/ru/app-store/">
+            <span class="visually-hidden">app-store</span>
           </a>
-          <a class="apps-logo__android" href="https://play.google.com/store">
-            <svg width="43" height="47" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M34.886 14.062H8.114v19.133c-.011.913.332 1.795.96 2.468a3.697 3.697 0 0 0 2.422 1.159v7.453c.044.737.374 1.43.922 1.936a2.986 2.986 0 0 0 2.026.789c.753 0 1.478-.282 2.026-.789.548-.506.878-1.199.922-1.936v-7.433h8.236v7.433c.045.737.375 1.43.922 1.936a2.985 2.985 0 0 0 2.026.789c.754 0 1.478-.282 2.026-.789.548-.506.878-1.199.922-1.936v-7.453a3.707 3.707 0 0 0 2.426-1.158c.63-.673.975-1.555.967-2.468V14.402l-.03-.34ZM2.953 15.745c.78 0 1.53.304 2.081.845.552.54.862 1.275.862 2.04v12.402c.001.38-.074.756-.22 1.107a2.88 2.88 0 0 1-.638.94 2.947 2.947 0 0 1-.956.627 2.995 2.995 0 0 1-3.217-.627A2.866 2.866 0 0 1 0 31.032V18.63c0-.38.076-.756.225-1.107.149-.35.366-.669.64-.937.275-.268.6-.48.959-.625a2.995 2.995 0 0 1 1.13-.216ZM40.057 15.745c.78 0 1.53.304 2.081.845.552.54.862 1.275.862 2.04v12.402c.001.38-.074.756-.221 1.107-.147.351-.364.67-.637.94a2.947 2.947 0 0 1-.956.627 2.994 2.994 0 0 1-3.217-.627 2.867 2.867 0 0 1-.865-2.047V18.63c0-.38.076-.756.225-1.107.148-.35.366-.669.64-.937.275-.268.6-.48.959-.625a2.995 2.995 0 0 1 1.129-.216ZM8.175 12.058h26.568a10.404 10.404 0 0 0-3.26-7.293L34.049.498a.307.307 0 0 0-.122-.461.322.322 0 0 0-.42.11l-2.42 4.157A16.708 16.708 0 0 0 21.458.898a16.977 16.977 0 0 0-9.575 3.406L9.504.187a.325.325 0 0 0-.184-.16.333.333 0 0 0-.246.01.315.315 0 0 0-.112.42l2.493 4.238a10.443 10.443 0 0 0-3.28 7.363Zm17.699-5.21c0-.398.161-.78.449-1.062.287-.281.677-.44 1.083-.44.407 0 .797.159 1.084.44.288.282.45.664.45 1.063 0 .398-.162.78-.45 1.062-.287.282-.677.44-1.084.44-.406 0-.796-.158-1.083-.44a1.488 1.488 0 0 1-.45-1.062Zm-11.384 0c0-.398.162-.78.449-1.062.287-.281.677-.44 1.084-.44.406 0 .796.159 1.084.44.287.282.449.664.449 1.063 0 .398-.162.78-.45 1.062-.287.282-.677.44-1.083.44-.407 0-.797-.158-1.084-.44a1.488 1.488 0 0 1-.449-1.062Z"
-                fill="#A4C639" /></svg>
+          <a class="apps__android" href="https://play.google.com/store">
+            <span class="visually-hidden">google-play</span>
           </a>
-          <a class="apps-logo__windows" href="https://www.microsoft.com/ru-RU/store/apps">
-            <svg width="44" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20.908 19.524H0V0h20.908v19.524Z" fill="#F05423" />
-              <path d="M44 19.524H23.092V0H44v19.524Z" fill="#84C441" />
-              <path d="M20.908 41H0V21.476h20.908V41Z" fill="#2DABE2" />
-              <path d="M44 41H23.092V21.476H44V41Z" fill="#F9BC15" /></svg>
+          <a class="apps__windows" href="https://www.microsoft.com/ru-RU/store/apps">
+            <span class="visually-hidden">windows</span>
           </a>
         </div>
-        <p class="apps-description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
-    </article>
-    <section class="info">
-      <div class="info-wrapper">
-        <h2 class="info-title">Устали от серости мегаполиса?</h2>
-        <h2 class="info-title">Нам есть, что вам предложить!</h2>
+        <p class="apps__description text">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
       </div>
     </section>
-    <div class="info_detals__wrapper">
-      <section class="info-description">
-        <h3 class="info-description__title">
-          Поднимает настроение
-        </h3>
-        <p class="info-description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-          несколько кликов!
-        </p>
-      </section>
-      <section class="info-description">
-        <h3 class="info-description__title">
-          Меняет мир вокруг
-        </h3>
-        <p class="info-description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-          эффект
-        </p>
-      </section>
-      <section class="info-description">
-        <h3 class="info-description__title">
-          Заводит новых друзей
-        </h3>
-        <p class="info-description__text">
-          Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-        </p>
-      </section>
-      <div class="example-phone"></div>
-    </div>
+    <section class="info">
+      <div class="info__wrapper">
+        <h2 class="info__title">
+          <span>Устали от серости мегаполиса?</span>
+          <span>Нам есть, что вам предложить!</span>
+        </h2>
+      </div>
+      <div class="info__detals">
+        <section class="info-description">
+          <h3 class="info-description__title">Поднимает настроение</h3>
+          <p class="info-description__text">
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            несколько кликов!
+          </p>
+        </section>
+        <section class="info-description">
+          <h3 class="info-description__title">Меняет мир вокруг</h3>
+          <p class="info-description__text">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+            эффект
+          </p>
+        </section>
+        <section class="info-description">
+          <h3 class="info-description__title">Заводит новых друзей</h3>
+          <p class="info-description__text">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+          <img class="info-description__img" src="img/phone-detals.png" alt="Телефон с примером фильтра" width="157"
+            height="320">
+        </section>
+      </div>
+    </section>
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
       <div class="reviews__wrapper slider">
@@ -103,149 +95,130 @@
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-                серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+                познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </div>
           </blockquote>
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Котопес</cite>
-              <p class="reviews__text">«Я увидел свеого внутреннего кота или пса?!?!»
+              <p class="reviews__text">
+                «Я увидел свеого внутреннего кота или пса?!?!»
               </p>
             </div>
           </blockquote>
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Бэтмен</cite>
-              <p class="reviews__text">«Это приложение позволяет мне видеть в темноте, в то время когда очки ночного
+              <p class="reviews__text">
+                «Это приложение позволяет мне видеть в темноте, в то время когда очки ночного
                 видения с Алиэкспресс не работают!»
               </p>
             </div>
           </blockquote>
         </div>
-      </div>
-      <div class="reviews__toggles slider__toggles">
-        <button class="slider__toggle slider__toggle--current" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </div>
-    </section>
-    <section class="tariffs">
-      <h2 class="visually-hidden">Виды тарифов</h2>
-      <div class="tariffs__wrapper">
-        <div class="tariffs__wrapper slider">
-          <div class="tariffs__list slider__list">
-            <table class="tariffs-table">
-              <thead class="tariffs-table__head">
-                <tr>
-                  <th class="tariffs-type">СТАНДАРТ
-                    <p>3,99 USD</p>
-                  </th>
-                </tr>
-              </thead>
-              <tbody class="tariffs-table__body">
-                <tr>
-                  <th>Розовый фильтр
-                    <svg width="31" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M30.556.43a1.54 1.54 0 0 0-.499-.318 1.607 1.607 0 0 0-1.179 0 1.54 1.54 0 0 0-.499.318L10.374 17.496 2.578 10.11a1.582 1.582 0 0 0-1.072-.39 1.576 1.576 0 0 0-1.057.425c-.28.266-.442.625-.449 1.001-.007.377.14.74.411 1.016l8.88 8.412c.142.135.31.243.497.316a1.596 1.596 0 0 0 1.67-.316L30.556 2.482c.284-.274.444-.642.444-1.026S30.84.703 30.556.43Z"
-                        fill="#3DC644" /></svg>
-                  </th>
-                </tr>
-                <tr>
-                  <th>Смайлики
-                    <svg width="31" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M30.556.43a1.54 1.54 0 0 0-.499-.318 1.607 1.607 0 0 0-1.179 0 1.54 1.54 0 0 0-.499.318L10.374 17.496 2.578 10.11a1.582 1.582 0 0 0-1.072-.39 1.576 1.576 0 0 0-1.057.425c-.28.266-.442.625-.449 1.001-.007.377.14.74.411 1.016l8.88 8.412c.142.135.31.243.497.316a1.596 1.596 0 0 0 1.67-.316L30.556 2.482c.284-.274.444-.642.444-1.026S30.84.703 30.556.43Z"
-                        fill="#3DC644" /></svg>
-                  </th>
-                </tr>
-                <tr>
-                  <th>Комментарии
-                    <svg width="27" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="m15.644 13.507 10.91-10.92a1.503 1.503 0 0 0 0-2.14 1.524 1.524 0 0 0-2.14 0l-10.909 10.92L2.586.447a1.504 1.504 0 0 0-2.14 0 1.524 1.524 0 0 0 0 2.14l10.92 10.92-10.92 10.91a1.503 1.503 0 0 0 0 2.139 1.514 1.514 0 0 0 2.14 0l10.919-10.91 10.909 10.91a1.514 1.514 0 0 0 2.14-2.14l-10.91-10.91Z"
-                        fill="#F25B26" /></svg>
-                  </th>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="tariffs__toggles slider__toggles">
+        <div class="reviews__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--current" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </div>
       </div>
     </section>
+    <section class="tariffs">
+      <h2 class="visually-hidden">Виды тарифов</h2>
+      <div class="tariffs__wrapper">
+        <table class="tariffs-table">
+          <thead class="tariffs-table__head">
+            <tr>
+              <th class="tariffs-table__type">
+                СТАНДАРТ
+                <span>3,99 USD</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="tariffs-table__body">
+            <tr>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+                Розовый фильтр
+              </td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+                Смайлики
+              </td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__cell">
+                Комментарии
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="tariffs__toggles toggles">
+          <button class="toggles__button toggles__button--current" type="button">1</button>
+          <button class="toggles__button" type="button">2</button>
+          <button class="toggles__button" type="button">3</button>
+        </div>
+      </div>
+    </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h3 class="contacts-title">Остались вопросы?</h3>
-        <h3 class="contacts-title">Свяжитесь с нами!</h3>
-        <div class="contacts__phone">
-          <h4 class="phone-text">Звоните:</h4>
-          <a href="tel:+78125556666" class="contacts-tel">+7 (812) 555-66-66</a>
-        </div>
-        <div class="contacts__email">
-          <h4 class="email-text">Пишите:</h4>
-          <a href="mailto:mail@htmlacademy.ru" class="contacts-email">mail@htmlacademy.ru</a>
-        </div>
-        <div class="contacts__adress">
-          <h4 class="adress-text">Приезжайте в гости:</h4>
-          <a href="#" class="contacts-adress">ул. Большая
-            Конюшенная, 19/8</a>
-        </div>
+        <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
+
+        <h4 class="contacts__subtitle">Звоните:</h4>
+        <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
+
+        <h4 class="contacts__subtitle">Пишите:</h4>
+        <a class="contacts__text" href="mailto:mail@htmlacademy.ru">
+          mail@htmlacademy.ru
+        </a>
+
+        <h4 class="contacts__subtitle">Приезжайте в гости:</h4>
+        <a href="#" class="contacts__text">ул. Большая Конюшенная, 19/8</a>
       </div>
-      <div class="map"></div>
+      <div class="map">
+        <img class="map__img" src="img/map.png" alt="Яндекс карта">
+      </div>
     </section>
     <footer class="footer">
-      <div class="footer-logo">
-        <a class="logo__glasses" href="index.html">
-          <img class="logo-img" src="img/glasses-footer.svg" alt="logo-footer" width="59" height="40">
+      <p class="footer__logo">
+        <a class="footer__logo__link">
+          <img class="footer__logo__img" src="img/logotype-blue-tablet.svg" alt="logo-footer" width="59" height="40">
         </a>
-        <a class="logo__footer" href="index.html">
-          <img class="logo-img" src="img/logo-pink-black.svg" alt="logo-footer" width="74" height="23">
-        </a>
-      </div>
-      <section class="footer-social">
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="social-button" href="#">
+      </p>
+
+      <section class="footer__social">
+        <h3 class="visually-hidden">Социальные сети</h3>
+
+        <ul class="footer__social__list socials">
+          <li class="socials__item">
+            <a class="socials__button socials__button--twitter" href="https://twitter.com/">
               <span class="visually-hidden">Твиттер</span>
-              <svg width="18" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M11.564.169A3.675 3.675 0 0 1 13.672.14c.688.196 1.291.59 1.723 1.122.71-.21 1.41-.447 2.131-.656a2.03 2.03 0 0 1-.253.917c-.157.284-.38.533-.653.729.253.026.508-.002.747-.081.24-.08.456-.208.633-.376-.099.414-.3.801-.588 1.131-.287.33-.653.594-1.07.772-.247 6.27-3.367 10.467-10.689 10.296H5.15c-.443 0-4.418-.428-5.149-1.75 1.752.245 3.539-.147 4.984-1.095-1.03-.286-2.852-.447-3.161-2.74.388.133.81.163 1.215.085C1.76 7.705.34 7.039.422 4.993c.398.306.905.462 1.421.438C1.102 5.203-.247 2.31.896.825c1.926 1.723 3.964 3.35 7.59 3.512C8.711 2.205 9.69.777 11.563.169Z"
-                  fill="#D22856" /></svg>
             </a>
           </li>
-          <li class="footer-social-item">
-            <a class="social-button" href="#">
+          <li class="socials__item">
+            <a class="socials__button socials__button--facebook" href="https://www.facebook.com/">
               <span class="visually-hidden">Фейсбук</span>
-              <svg width="9" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M6.509 3.193H9V0H6.02C2.762.171 1.6 2.271 2.077 5.816H0v3.336h2.076V18h3.945V9.152h2.958V5.816H6.01c-.02-.998-.041-2.29.499-2.623Z"
-                  fill="#D22856" /></svg>
             </a>
           </li>
-          <li class="footer-social-item">
-            <a class="social-button" href="#">
+          <li class="socials__item">
+            <a class="socials__button socials__button--youtube" href="https://www.youtube.com/">
               <span class="visually-hidden">Ютуб</span>
-              <svg width="15" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M1.834 12.809a1.257 1.257 0 0 1-1.285.03 1.097 1.097 0 0 1-.443-.457.97.97 0 0 1-.092-.603V1.221A.97.97 0 0 1 .106.618C.2.429.355.27.549.16a1.256 1.256 0 0 1 1.285.031l12.4 5.502c1.022.445 1.022 1.169 0 1.614l-12.4 5.502Z"
-                  fill="#D22856" /></svg>
             </a>
           </li>
         </ul>
-        <div class="footer-logo">
+        <div class="footer-developer">
           <h4 class="visually-hidden">Разработано</h4>
-          <a href="" class="footer-logo-link">
+
+          <a class="footer-developer__link" href="https://htmlacademy.ru/intensive/adaptive"
+            aria-label="Перейти на сайт разработчика">
             <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"
-                fill="#D22856" /></svg>
+                fill="#D22856" />
+            </svg>
           </a>
         </div>
       </section>

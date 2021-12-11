@@ -1,12 +1,228 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+  <header class="header">
+    <p class="header__logo">
+      <a class="logo">
+        <img class="logo__img" src="img/logotype-white.svg" alt="logo" width="145" height="40">
+      </a>
+    </p>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--current">
+          <a>Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a href="https://htmlacademy.ru/">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="promo">
+      <h1 class="promo__title main-title">Взгляните на жизнь иначе!</h1>
+      <div class="apps">
+        <a class="apps__download button" href="https://www.apple.com/ru/app-store/">
+          Скачать приложение
+        </a>
+        <div class="apps__wrapper">
+          <a class="apps__apple" href="https://www.apple.com/ru/app-store/">
+            <span class="visually-hidden">app-store</span>
+          </a>
+          <a class="apps__android" href="https://play.google.com/store">
+            <span class="visually-hidden">google-play</span>
+          </a>
+          <a class="apps__windows" href="https://www.microsoft.com/ru-RU/store/apps">
+            <span class="visually-hidden">windows</span>
+          </a>
+        </div>
+        <p class="apps__description">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </div>
+    </section>
+    <section class="info">
+      <div class="info__wrapper">
+        <h2 class="info__title">
+          <span>Устали от серости мегаполиса?</span>
+          <span>Нам есть, что вам предложить!</span>
+        </h2>
+      </div>
+      <div class="info__detals">
+        <section class="info-description">
+          <h3 class="info-description__title">Поднимает настроение</h3>
+          <p class="info-description__text">
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            несколько кликов!
+          </p>
+        </section>
+        <section class="info-description">
+          <h3 class="info-description__title">Меняет мир вокруг</h3>
+          <p class="info-description__text">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+            эффект
+          </p>
+        </section>
+        <section class="info-description">
+          <h3 class="info-description__title">Заводит новых друзей</h3>
+          <p class="info-description__text">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+          <img class="info-description__img" src="img/phone-detals.png" alt="Телефон с примером фильтра" width="157"
+            height="320">
+        </section>
+      </div>
+    </section>
+    <section class="reviews">
+      <h2 class="visually-hidden">Отзывы пользователей</h2>
+      <div class="reviews__wrapper slider">
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <div class="reviews__author-info">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+                познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </div>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <div class="reviews__author-info">
+              <cite class="reviews__author-name">Котопес</cite>
+              <p class="reviews__text">
+                «Я увидел свеого внутреннего кота или пса?!?!»
+              </p>
+            </div>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <div class="reviews__author-info">
+              <cite class="reviews__author-name">Бэтмен</cite>
+              <p class="reviews__text">
+                «Это приложение позволяет мне видеть в темноте, в то время когда очки ночного
+                видения с Алиэкспресс не работают!»
+              </p>
+            </div>
+          </blockquote>
+        </div>
+        <div class="reviews__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle--current" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </div>
+      </div>
+    </section>
+    <section class="tariffs">
+      <h2 class="visually-hidden">Виды тарифов</h2>
+      <div class="tariffs__wrapper">
+        <table class="tariffs-table">
+          <thead class="tariffs-table__head">
+            <tr>
+              <th class="tariffs-table__type">
+                СТАНДАРТ
+                <span>3,99 USD</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="tariffs-table__body">
+            <tr>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+                Розовый фильтр
+              </td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+                Смайлики
+              </td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__cell">
+                Комментарии
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="tariffs__toggles toggles">
+          <button class="toggles__button toggles__button--current" type="button">1</button>
+          <button class="toggles__button" type="button">2</button>
+          <button class="toggles__button" type="button">3</button>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
+
+        <h4 class="contacts__subtitle">Звоните:</h4>
+        <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
+
+        <h4 class="contacts__subtitle">Пишите:</h4>
+        <a class="contacts__text" href="mailto:mail@htmlacademy.ru">
+          mail@htmlacademy.ru
+        </a>
+
+        <h4 class="contacts__subtitle">Приезжайте в гости:</h4>
+        <a href="#" class="contacts__text">ул. Большая Конюшенная, 19/8</a>
+      </div>
+      <div class="map">
+        <img class="map__img" src="img/map.png" alt="Яндекс карта">
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__logo">
+      <a class="footer__link">
+        <img class="footer__img" src="img/logotype-blue-tablet.svg" alt="logo-footer" width="59" height="40">
+      </a>
+    </p>
+    <section class="footer__social">
+      <h3 class="visually-hidden">Социальные сети</h3>
+
+      <ul class="footer__social-list socials">
+        <li class="socials__item">
+          <a class="socials__button socials__button--twitter" href="https://twitter.com/">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__button socials__button--facebook" href="https://www.facebook.com/">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__button socials__button--youtube" href="https://www.youtube.com/">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer-developer">
+        <h4 class="visually-hidden">Разработано</h4>
+
+        <a class="footer-developer__link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Перейти на сайт разработчика">
+          <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"
+              fill="#D22856" />
+          </svg>
+        </a>
+      </div>
+    </section>
+  </footer>
+</body>
+
 </html>

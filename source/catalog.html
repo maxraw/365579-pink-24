@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+  <header class="header">
+    <p class="header__logo">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="img/logotype-white.svg" alt="logo" width="145" height="40">
+      </a>
+    </p>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--current">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a>Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a href="https://htmlacademy.ru/">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-catalog">
+    <section class="promo">
+      <h1 class="promo__title">Фотографии пользователей</h1>
+    </section>
+    <section class="users-foto">
+      <h3 class="visually-hidden">Фотографии, которые выложили пользователи</h3>
+      <p class="users-foto__description">
+        Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?
+      </p>
+      <blockquote class="users-foto__reviews">
+        <div class="users-foto__foto users-foto__foto--check">
+          <a class="users-foto__link" href="#">
+            <img src="img/panorama.jpg" alt="Вид панорамы" width="320" height="137">
+          </a>
+        </div>
+        <div class="users-foto__info user-reviev">
+          <cite class="user-reviev__name">Анна</cite>
+          <span>(5 минут назад)</span>
+          <p class="user-reviev__text">
+            Прыгать или нет? Напишите в комментарии свой совет и
+            смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+          </p>
+          <div class="user-reviev__stats">
+            <button class="heart" type="button"></button>
+            <span class="likes-number">Нравится: 215</span>
+          </div>
+        </div>
+      </blockquote>
+
+      <blockquote class="users-foto__reviews">
+        <div class="users-foto__foto">
+          <a class="users-foto__link" href="#">
+            <img src="img/car.jpg" alt="Фото белой машины" width="280" height="180">
+          </a>
+        </div>
+        <div class="users-foto__info user-reviev">
+          <cite class="user-reviev__name">Левон</cite>
+          <span>(5 часов назад)</span>
+          <p class="user-reviev__text">
+            Вчера он на луну летал, сегодня в руки к нам попал.
+          </p>
+          <div class="user-reviev__stats">
+            <button class="heart" type="button"></button>
+            <span class="likes-number">Нравится: 356</span>
+          </div>
+        </div>
+      </blockquote>
+
+      <blockquote class="users-foto__reviews">
+        <div class="users-foto__foto">
+          <a class="users-foto__link" href="#">
+            <img src="img/drums.jpg" alt="Барабанная установка" width="280" height="180">
+          </a>
+        </div>
+        <div class="users-foto__info user-reviev">
+          <cite class="user-reviev__name">Антон</cite>
+          <span>(12 часов назад)</span>
+          <p class="user-reviev__text">
+            Соседи будут рады!
+          </p>
+          <div class="user-reviev__stats">
+            <button class="heart" type="button"></button>
+            <span class="likes-number">Нравится: 666</span>
+          </div>
+        </div>
+      </blockquote>
+
+      <blockquote class="users-foto__reviews">
+        <div class="users-foto__foto">
+          <a class="users-foto__link" href="#">
+            <img src="img/windows-img.jpg" alt="Витражное окно" width="280" height="180">
+          </a>
+        </div>
+        <div class="users-foto__info user-reviev">
+          <cite class="user-reviev__name">Борис</cite>
+          <span>(20 часов назад)</span>
+          <p class="user-reviev__text">
+            Здесь могла быть ваша цитата о высоком и вечном.
+          </p>
+          <div class="user-reviev__stats">
+            <button class="heart" type="button"></button>
+            <span class="likes-number">Нравится: 215</span>
+          </div>
+        </div>
+      </blockquote>
+
+      <blockquote class="users-foto__reviews">
+        <div class="users-foto__foto">
+          <a class="users-foto__link" href="#">
+            <img src="img/market.jpg" alt="Фото рынка" width="280" height="180">
+          </a>
+        </div>
+        <div class="users-foto__info user-reviev">
+          <cite class="user-reviev__name">Сергей</cite>
+          <span>(25 часов назад)</span>
+          <p class="user-reviev__text">
+            Самая кубанская в мире!
+          </p>
+          <div class="user-reviev__stats">
+            <button class="heart" type="button"></button>
+            <span class="likes-number">Нравится: 4</span>
+          </div>
+        </div>
+      </blockquote>
+
+      <blockquote class="users-foto__reviews">
+        <div class="users-foto__foto">
+          <a class="users-foto__link" href="#">
+            <img src="img/legs.jpg" alt="Фото ног" width="280" height="180">
+          </a>
+        </div>
+        <div class="users-foto__info user-reviev">
+          <cite class="user-reviev__name">Максим</cite>
+          <span>(40 часов назад)</span>
+          <p class="user-reviev__text">
+            Где снег-то?
+          </p>
+          <div class="user-reviev__stats">
+            <button class="heart" type="button"></button>
+            <span class="likes-number">Нравится: 150</span>
+          </div>
+        </div>
+      </blockquote>
+
+      <blockquote class="users-foto__reviews">
+        <div class="users-foto__foto">
+          <a class="users-foto__link" href="#">
+            <img src="img/airplane.jpg" alt="Крыло самотлета" width="280" height="180">
+          </a>
+        </div>
+        <div class="users-foto__info user-reviev">
+          <cite class="user-reviev__name">Надежда</cite>
+          <span>(45 часов назад)</span>
+          <p class="user-reviev__text">
+            Всем GM и взаимные лайки!
+          </p>
+          <div class="user-reviev__stats">
+            <button class="heart" type="button"></button>
+            <span class="likes-number">Нравится: 2560</span>
+          </div>
+        </div>
+      </blockquote>
+
+      <p class="users-foto__description">
+        <span>Затмите их всех!</span>
+        <span>Выкладывайте все, что накопилось в телефоне!</span>
+      </p>
+    </section>
+    <section class="photo-load">
+      <h3 class="visually-hidden">Загрузите свое фото</h3>
+      <form class="photo-load__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="photo-load__foto">
+          <a class="photo-load__link" href="#">
+            <img src="img/winter.png" alt="Зима" width="280" height="364">
+          </a>
+        </div>
+        <ul class="photo-load__filter filter">
+          <li class="filter__item">
+            <span class="visually-hidden">crop</span>
+          </li>
+          <li class="filter__item">
+            <span class="visually-hidden">fill</span>
+          </li>
+          <li class="filter__item">
+            <span class="visually-hidden">contrast</span>
+          </li>
+        </ul>
+        <div class="photo-load__range range-controls">
+          <div class="range-controls__bar">
+            <button class="range-controls__toggle range-controls__min" type="button">
+              <span class="visually-hidden">Минимум</span>
+            </button>
+            <button class="range-controls__toggle range-controls__max" type="button">
+              <span class="visually-hidden">Максимум</span>
+            </button>
+          </div>
+        </div>
+        <button class="button photo-load__button photo-load__button--accept" type="submit">
+          Запостить
+        </button>
+        <button class="button photo-load__button photo-load__button--cancel" type="reset">
+          Отмена
+        </button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__logo">
+      <a class="footer__link">
+        <img class="footer__img" src="img/logotype-blue-tablet.svg" alt="logo-footer" width="59" height="40">
+      </a>
+    </p>
+    <section class="footer__social">
+      <h3 class="visually-hidden">Социальные сети</h3>
+
+      <ul class="footer__social-list socials">
+        <li class="socials__item">
+          <a class="socials__button socials__button--twitter" href="https://twitter.com/">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__button socials__button--facebook" href="https://www.facebook.com/">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__button socials__button--youtube" href="https://www.youtube.com/">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer-developer">
+        <h4 class="visually-hidden">Разработано</h4>
+
+        <a class="footer-developer__link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Перейти на сайт разработчика">
+          <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"
+              fill="#D22856" />
+          </svg>
+        </a>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>

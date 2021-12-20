@@ -4,57 +4,60 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header">
-    <p class="header__logo">
-      <a class="logo">
-        <img class="logo__img" src="img/logotype-white.svg" alt="logo" width="145" height="40">
-      </a>
-    </p>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--current">
-          <a>Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="catalog.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru/">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main">
+  <header class="header header--mobile">
+    <div class="header-wrapper">
+      <p class="header__logo">
+        <a class="logo">
+          <img class="logo__img" src="img/logotype-white.svg" alt="logo" width="145" height="40">
+        </a>
+      </p>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <section class="promo">
       <h1 class="promo__title main-title">Взгляните на жизнь иначе!</h1>
-      <div class="apps">
-        <a class="apps__download button" href="https://www.apple.com/ru/app-store/">
-          Скачать приложение
+    </section>
+  </header>
+  <main class="main">
+    <section class="apps">
+      <a class="apps__download button" href="https://www.apple.com/ru/app-store/">
+        Скачать приложение
+      </a>
+      <div class="apps__wrapper">
+        <a class="apps__apple" href="https://www.apple.com/ru/app-store/">
+          <span class="visually-hidden">app-store</span>
         </a>
-        <div class="apps__wrapper">
-          <a class="apps__apple" href="https://www.apple.com/ru/app-store/">
-            <span class="visually-hidden">app-store</span>
-          </a>
-          <a class="apps__android" href="https://play.google.com/store">
-            <span class="visually-hidden">google-play</span>
-          </a>
-          <a class="apps__windows" href="https://www.microsoft.com/ru-RU/store/apps">
-            <span class="visually-hidden">windows</span>
-          </a>
-        </div>
-        <p class="apps__description">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+        <a class="apps__android" href="https://play.google.com/store">
+          <span class="visually-hidden">google-play</span>
+        </a>
+        <a class="apps__windows" href="https://www.microsoft.com/ru-RU/store/apps">
+          <span class="visually-hidden">windows</span>
+        </a>
       </div>
+      <p class="apps__description">
+        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </p>
     </section>
     <section class="info">
       <div class="info__wrapper">
@@ -133,7 +136,7 @@
           <thead class="tariffs-table__head">
             <tr>
               <th class="tariffs-table__type">
-                СТАНДАРТ
+                Стандарт
                 <span>3,99 USD</span>
               </th>
             </tr>
@@ -179,14 +182,14 @@
         <a href="#" class="contacts__text">ул. Большая Конюшенная, 19/8</a>
       </div>
       <div class="map">
-        <img class="map__img" src="img/map.png" alt="Яндекс карта">
+        <img class="map__img" src="img/map.png" alt="Яндекс карта" width="320" height="200">
       </div>
     </section>
   </main>
   <footer class="footer">
     <p class="footer__logo">
       <a class="footer__link">
-        <img class="footer__img" src="img/logotype-blue-tablet.svg" alt="logo-footer" width="59" height="40">
+        <img class="footer__img" src="img/logotype-blue-tablet.svg" alt="logo-footer" width="145" height="40">
       </a>
     </p>
     <section class="footer__social">
@@ -210,7 +213,7 @@
         </li>
       </ul>
       <div class="footer-developer">
-        <h4 class="visually-hidden">Разработано</h4>
+        <h4 class="footer-developer__title">Разработано</h4>
 
         <a class="footer-developer__link" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Перейти на сайт разработчика">

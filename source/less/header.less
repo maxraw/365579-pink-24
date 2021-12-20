@@ -1,0 +1,39 @@
+.header {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  background-color: @black;
+  background-image: url("../img/back-mobile.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.header--mobile {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  background-color: @black;
+  background-image: url("../img/phone-promo.png"), url("../img/back-mobile.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, top;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: @black;
+  opacity: 0.3;
+}
+
+.site-list__item {
+  list-style-type: none;
+}
+
+.site-list__item a {
+  color: @white;
+  text-decoration: none;
+  text-transform: uppercase;
+}

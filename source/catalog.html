@@ -4,39 +4,42 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
-    <p class="header__logo">
-      <a class="logo" href="index.html">
-        <img class="logo__img" src="img/logotype-white.svg" alt="logo" width="145" height="40">
-      </a>
-    </p>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--current">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a>Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru/">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main-catalog">
+    <div class="header-wrapper">
+      <p class="header__logo">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="img/logotype-white.svg" alt="logo" width="145" height="40">
+        </a>
+      </p>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a>Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <section class="promo">
       <h1 class="promo__title">Фотографии пользователей</h1>
     </section>
+  </header>
+  <main class="main-catalog">
     <section class="users-foto">
       <h3 class="visually-hidden">Фотографии, которые выложили пользователи</h3>
       <p class="users-foto__description">
@@ -191,13 +194,13 @@
           </a>
         </div>
         <ul class="photo-load__filter filter">
-          <li class="filter__item">
+          <li class="filter__item filter__item--crop">
             <span class="visually-hidden">crop</span>
           </li>
-          <li class="filter__item">
+          <li class="filter__item filter__item--fill">
             <span class="visually-hidden">fill</span>
           </li>
-          <li class="filter__item">
+          <li class="filter__item filter__item--contrast">
             <span class="visually-hidden">contrast</span>
           </li>
         </ul>
@@ -223,7 +226,7 @@
   <footer class="footer">
     <p class="footer__logo">
       <a class="footer__link">
-        <img class="footer__img" src="img/logotype-blue-tablet.svg" alt="logo-footer" width="59" height="40">
+        <img class="footer__img" src="img/logotype-blue-tablet.svg" alt="logo-footer" width="145" height="40">
       </a>
     </p>
     <section class="footer__social">
@@ -247,7 +250,7 @@
         </li>
       </ul>
       <div class="footer-developer">
-        <h4 class="visually-hidden">Разработано</h4>
+        <h4 class="footer-developer__title">Разработано</h4>
 
         <a class="footer-developer__link" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Перейти на сайт разработчика">

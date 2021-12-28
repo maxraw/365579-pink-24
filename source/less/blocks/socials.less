@@ -1,0 +1,33 @@
+.socials__item {
+  padding: 10px;
+  list-style-type: none;
+  border: 3px solid @solutude-gray;
+  border-radius: 50%;
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.socials__button {
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--twitter {
+    background-image: url("../img/icons/twitter.svg");
+    background-size: 18px 14px;
+  }
+
+  &--facebook {
+    background-image: url("../img/icons/facebook.svg");
+    background-size: 9px 18px;
+  }
+
+  &--youtube {
+    background-image: url("../img/icons/youtube.svg");
+    background-size: 15px 13px;
+  }
+}

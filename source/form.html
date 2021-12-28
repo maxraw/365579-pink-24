@@ -4,39 +4,42 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
-    <p class="header__logo">
-      <a class="logo" href="index.html">
-        <img class="logo__img" src="img/logotype-white.svg" alt="logo" width="145" height="40">
-      </a>
-    </p>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--current">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="catalog.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a>Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru/">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main-form">
+    <div class="header__wrapper">
+      <p class="header__logo">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="img/logotype-white.svg" alt="logo" width="145" height="40">
+        </a>
+      </p>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a>Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <section class="promo">
       <h1 class="promo__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </section>
+  </header>
+  <main class="main">
     <section class="competition">
       <h2 class="competition__title">
         Поделитесь своей историей и получите шанс выиграть ценный приз
@@ -60,44 +63,47 @@
           </label>
         </fieldset>
 
-        <fieldset class="competition__progress">
+        <div class="competition__wrapper competition__wrapper--gray">
+          <fieldset class="competition__contestant competition__progress">
 
-          <legend class="competition__text">
-            Ваши безбашенные достижения в путешествии
-          </legend>
+            <legend class="competition__legend">
+              Ваши безбашенные достижения в путешествии
+            </legend>
 
-          <label class="achievement competition__checkbox">
-            <input type="checkbox" name="selfi" checked>
-            <span>Сделал селфи с акулой</span>
-          </label>
+            <label class="achievement competition__checkbox competition__text">
+              <input type="checkbox" name="selfi" checked>
+              <span>Сделал селфи с акулой</span>
+            </label>
 
-          <label class="achievement competition__checkbox">
-            <input type="checkbox" name="burnt" checked>
-            <span>Обгорел на пляже</span>
-          </label>
+            <label class="achievement competition__checkbox competition__text">
+              <input type="checkbox" name="burnt" checked>
+              <span>Обгорел на пляже</span>
+            </label>
 
-          <label class="achievement competition__checkbox">
-            <input type="checkbox" name="Chuck_Norris">
-            <span>Видел Чака Норриса</span>
-          </label>
+            <label class="achievement competition__checkbox competition__text">
+              <input type="checkbox" name="Chuck_Norris">
+              <span>Видел Чака Норриса</span>
+            </label>
 
-          <label class="achievement competition__checkbox">
-            <input type="checkbox" name="souvenirs">
-            <span>Накупил сувениров</span>
-          </label>
+            <label class="achievement competition__checkbox competition__text">
+              <input type="checkbox" name="souvenirs">
+              <span>Накупил сувениров</span>
+            </label>
 
-          <label class="achievement competition__checkbox">
-            <input type="checkbox" name="tower" checked>
-            <span>Удержал башню</span>
-          </label>
+            <label class="achievement competition__checkbox competition__text">
+              <input type="checkbox" name="tower" checked>
+              <span>Удержал башню</span>
+            </label>
 
-          <label class="achievement competition__checkbox">
-            <input type="checkbox" name="souvenirs">
-            <span>Разгромил отель</span>
-          </label>
+            <label class="achievement competition__checkbox competition__text">
+              <input type="checkbox" name="souvenirs">
+              <span>Разгромил отель</span>
+            </label>
 
-        </fieldset>
-        <fieldset class="competition__contestant-contacts">
+          </fieldset>
+        </div>
+
+        <fieldset class="competition__contestant competition__contestant-contacts">
 
           <legend class="visually-hidden">Контактные данные конкурсанта</legend>
           <label class="input-text input-text--phone competition__input-text">
@@ -111,35 +117,37 @@
           </label>
 
         </fieldset>
-        <fieldset class="competition__apps">
+        <div class="competition__wrapper competition__wrapper--gray">
+          <fieldset class="competition__contestant competition__apps">
 
-          <legend class="competition__text">
-            С каким приложением путешествовали?
-          </legend>
+            <legend class="competition__legend">
+              С каким приложением путешествовали?
+            </legend>
 
-          <label class="travel-app competition__radio">
-            <input type="radio" name="ios" checked>
-            <span>Pink для iOS</span>
-          </label>
+            <label class="travel-app competition__radio competition__text">
+              <input type="radio" name="ios" checked>
+              <span>Pink для iOS</span>
+            </label>
 
-          <label class="travel-app competition__radio">
-            <input type="radio" name="android">
-            <span>Pink на Android</span>
-          </label>
+            <label class="travel-app competition__radio competition__text">
+              <input type="radio" name="android">
+              <span>Pink на Android</span>
+            </label>
 
-          <label class="travel-app competition__radio">
-            <input type="radio" name="windows">
-            <span>Windows Phone</span>
-          </label>
+            <label class="travel-app competition__radio competition__text">
+              <input type="radio" name="windows">
+              <span>Windows Phone</span>
+            </label>
 
-        </fieldset>
-        <fieldset class="competition__story">
+          </fieldset>
+        </div>
+        <fieldset class="competition__contestant competition__story">
 
           <legend class="visually-hidden">
             Раскажите свою историю
           </legend>
 
-          <label class="travel-story competition__emotions">
+          <label class="competition__legend travel-story competition__emotions">
             <span>Опишите свои эмоции</span>
             <textarea name="story" id="story" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях
             </textarea>
@@ -148,14 +156,14 @@
         </fieldset>
 
         <button class="button-green competition__button" type="submit">Отправить форму</button>
-        <p class="competition__required">* — обязательные поля</p>
+        <p class="competition__required"><span>*</span> — обязательные поля</p>
       </form>
     </section>
   </main>
   <footer class="footer">
     <p class="footer__logo">
       <a class="footer__link">
-        <img class="footer__img" src="img/logotype-blue-tablet.svg" alt="logo-footer" width="59" height="40">
+        <img class="footer__img" src="img/logotype-blue-tablet.svg" alt="logo-footer" width="145" height="40">
       </a>
     </p>
     <section class="footer__social">
@@ -179,7 +187,7 @@
         </li>
       </ul>
       <div class="footer-developer">
-        <h4 class="visually-hidden">Разработано</h4>
+        <h4 class="footer-developer__title">Разработано</h4>
 
         <a class="footer-developer__link" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Перейти на сайт разработчика">

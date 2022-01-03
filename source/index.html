@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -38,26 +39,26 @@
     <section class="promo">
       <h1 class="promo__title promo__title--index">Взгляните на жизнь иначе!</h1>
       <img class="promo__background" src="img/phone-promo.png" alt="Телефон в руке" width="320" height="286">
-    </section>
-    <section class="apps">
-      <h2 class="visually-hidden">Используйте приложения</h2>
-      <a class="apps__download button" href="https://www.apple.com/ru/app-store/">
-        Скачать приложение
-      </a>
-      <div class="apps__wrapper">
-        <a class="apps__link apps__link--apple" href="https://www.apple.com/ru/app-store/">
-          <span class="visually-hidden">app-store</span>
+      <div class="apps">
+        <h2 class="visually-hidden">Используйте приложения</h2>
+        <a class="apps__download button" href="https://www.apple.com/ru/app-store/">
+          Скачать приложение
         </a>
-        <a class="apps__link apps__link--android" href="https://play.google.com/store">
-          <span class="visually-hidden">google-play</span>
-        </a>
-        <a class="apps__link apps__link--windows" href="https://www.microsoft.com/ru-RU/store/apps">
-          <span class="visually-hidden">windows</span>
-        </a>
+        <div class="apps__wrapper">
+          <a class="apps__link apps__link--apple" href="https://www.apple.com/ru/app-store/">
+            <span class="visually-hidden">app-store</span>
+          </a>
+          <a class="apps__link apps__link--android" href="https://play.google.com/store">
+            <span class="visually-hidden">google-play</span>
+          </a>
+          <a class="apps__link apps__link--windows" href="https://www.microsoft.com/ru-RU/store/apps">
+            <span class="visually-hidden">windows</span>
+          </a>
+        </div>
+        <p class="apps__description">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
       </div>
-      <p class="apps__description">
-        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-      </p>
     </section>
   </header>
   <main class="main">
@@ -69,28 +70,43 @@
         </h2>
       </div>
       <div class="info__detals">
-        <section class="info-description">
+        <section class="info__mood info-description">
           <h3 class="info-description__title">Поднимает настроение</h3>
           <p class="info-description__text">
             Приложение позволит вам победить осеннюю хандру и депрессию буквально в
             несколько кликов!
           </p>
         </section>
-        <section class="info-description">
+        <section class="info__world info-description">
           <h3 class="info-description__title">Меняет мир вокруг</h3>
           <p class="info-description__text">
             Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
             эффект
           </p>
         </section>
-        <section class="info-description">
+        <section class="info__friends info-description">
           <h3 class="info-description__title">Заводит новых друзей</h3>
           <p class="info-description__text">
             Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
           </p>
-          <img class="info-description__img" src="img/phone-detals.png" alt="Телефон с примером фильтра" width="157"
-            height="320">
         </section>
+        <img class="info__img info__img--phone-white" src="img/phone-white.png" alt="Телефон с примером фильтра"
+          width="186" height="382">
+        <img class="info__img info__img--phone-sideburns" src="img/phone-sideburns.png" alt="Телефон с примером фильтра"
+          width="186" height="382">
+        <img class="info__img info__img--phone-detals" src="img/phone-detals.png" alt="Телефон с примером фильтра"
+          width="157" height="320">
+      </div>
+      <div class="effect">
+        <img class="effect__img" src="img/timer.svg" alt="Таймер" width="238" height="276">
+        <div class="effect__description">
+          <h2 class="effect__title">Эффект на 24 часа!</h2>
+          <p class="effect__text">
+            Британские ученые провели исследования и доказали,
+            что положительный эффект от использования приложения длится целые сутки!
+          </p>
+          <a class="effect__link" href="#">Узнать больше об исследовании</a>
+        </div>
       </div>
     </section>
     <section class="reviews">
@@ -100,6 +116,7 @@
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Николай Петров</cite>
+              <span class="reviews__author-age">25 лет, водитель трамвая</span>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
                 познакомился со своей будущей женой в комментариях к выложенной фотографии!»
@@ -109,6 +126,7 @@
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Котопес</cite>
+              <span class="reviews__author-age">5 лет, обычный кот или пес?</span>
               <p class="reviews__text">
                 «Я увидел свеого внутреннего кота или пса?!?!»
               </p>
@@ -117,6 +135,7 @@
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Бэтмен</cite>
+              <span class="reviews__author-age">an old man, супергерой</span>
               <p class="reviews__text">
                 «Это приложение позволяет мне видеть в темноте, в то время когда очки ночного
                 видения с Алиэкспресс не работают!»
@@ -138,8 +157,19 @@
           <thead class="tariffs-table__head">
             <tr>
               <th class="tariffs-table__type">
+
+              </th>
+              <th class="tariffs-table__type">
+                База
+                <span>1,99 USD</span>
+              </th>
+              <th class="tariffs-table__type">
                 Стандарт
                 <span>3,99 USD</span>
+              </th>
+              <th class="tariffs-table__type">
+                Анлим
+                <span>9,99 USD</span>
               </th>
             </tr>
           </thead>
@@ -148,15 +178,42 @@
               <td class="tariffs-table__cell tariffs-table__cell--check">
                 Розовый фильтр
               </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+
+              </td>
             </tr>
             <tr>
               <td class="tariffs-table__cell tariffs-table__cell--check">
                 Смайлики
               </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+
+              </td>
             </tr>
             <tr>
               <td class="tariffs-table__cell">
                 Комментарии
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+
               </td>
             </tr>
           </tbody>
@@ -172,16 +229,23 @@
       <div class="contacts__wrapper">
         <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
 
-        <h4 class="contacts__subtitle">Звоните:</h4>
-        <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <div class="contacts__tel">
+          <h4 class="contacts__subtitle">Звоните:</h4>
+          <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
 
-        <h4 class="contacts__subtitle">Пишите:</h4>
-        <a class="contacts__text" href="mailto:mail@htmlacademy.ru">
-          mail@htmlacademy.ru
-        </a>
+        <div class="contacts__email">
+          <h4 class="contacts__subtitle">Пишите:</h4>
+          <a class="contacts__text" href="mailto:mail@htmlacademy.ru">
+            mail@htmlacademy.ru
+          </a>
+        </div>
 
-        <h4 class="contacts__subtitle">Приезжайте в гости:</h4>
-        <a href="#" class="contacts__text">ул. Большая Конюшенная, 19/8</a>
+        <div class="contacts__adress">
+          <h4 class="contacts__subtitle">Приезжайте в гости:</h4>
+          <a href="#" class="contacts__text">ул. Большая Конюшенная, 19/8</a>
+        </div>
+
       </div>
       <div class="map">
         <img class="map__img" src="img/map.png" alt="Яндекс карта" width="320" height="200">
@@ -214,19 +278,19 @@
           </a>
         </li>
       </ul>
-      <div class="footer-developer">
-        <h4 class="footer-developer__title">Разработано</h4>
-
-        <a class="footer-developer__link" href="https://htmlacademy.ru/intensive/adaptive"
-          aria-label="Перейти на сайт разработчика">
-          <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"
-              fill="#D22856" />
-          </svg>
-        </a>
-      </div>
     </section>
+    <div class="footer-developer">
+      <h4 class="footer-developer__title">Разработано</h4>
+
+      <a class="footer-developer__link" href="https://htmlacademy.ru/intensive/adaptive"
+        aria-label="Перейти на сайт разработчика">
+        <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"
+            fill="#D22856" />
+        </svg>
+      </a>
+    </div>
   </footer>
 </body>
 

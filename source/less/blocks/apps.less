@@ -1,6 +1,14 @@
 .apps {
   padding-top: 28px;
   background-color: @dark-blue-blue;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: transparent;
+    z-index: 1;
+  }
 }
 
 .apps__download {

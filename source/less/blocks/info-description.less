@@ -1,18 +1,48 @@
+.info-description {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .info-description__title {
   margin: 0;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 240px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .info-description__text {
   margin: 0;
   width: 280px;
   text-align: center;
-}
 
-.info-description__img {
-  margin: 0 auto;
-  display: block;
+  @media (min-width: @tablet-width) {
+    text-align: start;
+    width: 310px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 252px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

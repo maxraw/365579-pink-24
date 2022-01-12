@@ -6,3 +6,18 @@
   color: @granite-gray;
   background-color: @white;
 }
+
+.centerer-wrapper {
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    padding: 0 120px;
+  }
+}

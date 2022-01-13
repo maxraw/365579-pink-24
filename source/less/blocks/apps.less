@@ -3,24 +3,39 @@
   background-color: @dark-blue-blue;
 
   @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 2;
     background-color: transparent;
+    z-index: 1;
   }
 }
 
 .apps__centerer-wrapper {
-  padding-right: 120px;
+  @media (min-width: @tablet-width) {
+    padding-right: 120px;
+  }
 }
 
 .apps__download {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .apps__wrapper {
   display: flex;
   justify-content: center;
+  width: 260px;
+  margin: 0 auto;
   margin-top: 32px;
   margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .apps__link {
@@ -53,4 +68,8 @@
   line-height: 24px;
   text-align: center;
   color: @white;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }

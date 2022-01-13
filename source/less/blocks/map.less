@@ -1,4 +1,13 @@
 .map__img {
   display: block;
+  width: 100%;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+  }
 }

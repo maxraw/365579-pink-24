@@ -1,34 +1,79 @@
-.competition__title {
-  width: 280px;
-  margin: 0 auto;
-  padding-top: 54px;
-  padding-bottom: 55px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  color: @granite-gray;
-  text-align: center;
-}
-
-.competition__form {
-  width: 320px;
-  margin: 0 auto;
-}
-
 .competition__wrapper--gray {
   background-color: @light-grey;
-}
 
-.competition__contestant {
-  margin: 0;
-  padding: 0;
-  border: none;
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
 }
 
 .competition__story {
   width: 280px;
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 616px;
+  }
+}
+
+.competition__contestant {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @gray;
+    border-radius: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 936px;
+  }
+}
+
+.competition__apps {
+  @media (min-width: @desktop-width) {
+    width: 296px;
+  }
+}
+
+.competition__identification {
+  border: none;
+
+  @media (min-width: @desktop-width) {
+    width: 296px;
+  }
+}
+
+.competition__input-text {
+  display: block;
+
+  span {
+    @media (min-width: @tablet-width) {
+      margin-right: 20px;
+    }
+  }
+
+  input {
+    width: 276px;
+
+    @media (min-width: @tablet-width) {
+      width: 521px;
+      padding: 23px 323px 23px 20px;
+    }
+
+    &[name="firstname"] {
+      @media (min-width: @tablet-width) {
+        width: 561px;
+      }
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 56px;
+  }
 }
 
 .competition__legend {
@@ -36,6 +81,57 @@
   color: @bright-purplish-red;
   text-transform: uppercase;
   text-align: center;
+}
+
+.competition__legend--hide {
+  display: none;
+}
+
+.competition__legend--visible {
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.competition__checkbox {
+  [type="checkbox"] {
+    display: none;
+
+    /*&:checked + &span::before {
+      content: " ";
+      position: absolute;
+      top: 11px;
+      left: 4px;
+      width: 8px;
+      height: 2px;
+      background-color: @bright-purplish-red;
+    }
+
+    &:checked+ &span::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 6px;
+      width: 12px;
+      height: 2px;
+      background-color: @bright-purplish-red;
+    }*/
+  }
+
+  &::before {
+    content: " ";
+    color: @bright-purplish-red;
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+    text-indent: 0;
+    width: 35px;
+    height: 35px;
+    background-color: @white;
+    border: 2px solid @gray;
+    vertical-align: middle;
+  }
 }
 
 .competition__text {
@@ -59,4 +155,8 @@
 .competition__button {
   width: 276px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
 }

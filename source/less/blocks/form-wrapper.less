@@ -1,0 +1,53 @@
+.form-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 132px;
+  }
+}
+
+.form-wrapper__identification {
+  order: 1;
+}
+
+.form-wrapper__progress {
+  order: 4;
+}
+
+.form-wrapper__contestant {
+  order: 3;
+}
+
+.form-wrapper__apps {
+  order: 2;
+}
+
+.form-wrapper__story {
+  order: 5;
+}
+
+.form-wrapper__all-elements {
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+}
+
+.form-wrapper__button {
+  order: 6;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 936px;
+  }
+}

@@ -1,6 +1,5 @@
 .input-text {
   span {
-    display: block;
     font-weight: 400;
     line-height: 30px;
     color: @bright-purplish-red;
@@ -8,6 +7,7 @@
   }
 
   input {
+    display: block;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -16,6 +16,16 @@
     color: @granite-gray;
     border: 2px solid @gray;
     border-radius: 1px;
-    background-color: @white;
+    width: 100%;
+    padding: 15px 20px;
+  }
+
+  &--phone,
+  &--email {
+    @media (min-width: @desktop-width) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: start;
+    }
   }
 }

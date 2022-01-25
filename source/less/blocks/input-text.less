@@ -1,12 +1,23 @@
 .input-text {
+  display: block;
+
   span {
+    margin-bottom: 4px;
+    display: block;
+    padding-left: 23px;
     font-weight: 400;
     line-height: 30px;
     color: @bright-purplish-red;
     text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 0;
+      margin-right: 20px;
+    }
   }
 
-  input {
+  input,
+  textarea {
     display: block;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
@@ -20,12 +31,8 @@
     padding: 15px 20px;
   }
 
-  &--phone,
-  &--email {
-    @media (min-width: @desktop-width) {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: start;
-    }
+  textarea {
+    font-family: inherit;
+    resize: none;
   }
 }

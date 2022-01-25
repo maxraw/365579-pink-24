@@ -2,16 +2,24 @@
   display: block;
 
   span {
+    margin-bottom: 4px;
     display: block;
+    padding-left: 23px;
     font-weight: 400;
     line-height: 30px;
     color: @bright-purplish-red;
     text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 0;
+      margin-right: 20px;
+    }
   }
 
-  input {
+  input,
+  textarea {
+    display: block;
     box-sizing: border-box;
-    padding-left: 20px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -19,6 +27,12 @@
     color: @granite-gray;
     border: 2px solid @gray;
     border-radius: 1px;
-    background-color: @white;
+    width: 100%;
+    padding: 15px 20px;
+  }
+
+  textarea {
+    font-family: inherit;
+    resize: none;
   }
 }

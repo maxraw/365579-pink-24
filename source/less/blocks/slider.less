@@ -1,0 +1,23 @@
+.slider__toggles {
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.slider__toggle {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: @granite-gray-a3;
+
+  &--current {
+    width: 10px;
+    height: 10px;
+    background: @white;
+    border: 3px solid @granite-gray;
+  }
+}

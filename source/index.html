@@ -11,13 +11,14 @@
 <body class="body">
   <header class="header header--mobile">
     <div class="header__nav-wrapper">
-      <div class="centerer-wrapper header__wrapper">
-        <p class="header__logo">
-          <a class="logo">
-            <img class="logo__img" src="img/logotype-white.svg" alt="logo" width="145" height="40">
-          </a>
-        </p>
-        <nav class="main-nav">
+
+
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <div class="centerer-wrapper main-nav__wrapper">
+          <p class="header__logo">
+            <a class="logo">
+            </a>
+          </p>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -35,8 +36,9 @@
               <a href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
+
     </div>
     <section class="promo">
       <div class="centerer-wrapper promo__wrapper">
@@ -66,6 +68,7 @@
         </div>
       </div>
     </section>
+
   </header>
   <main>
     <section class="info">
@@ -111,8 +114,9 @@
           <div class="effect__description">
             <h2 class="effect__title">Эффект на 24 часа!</h2>
             <p class="effect__text">
-              Британские ученые провели исследования и доказали,
-              что положительный эффект от использования приложения длится целые сутки!
+              Британские ученые провели исследования
+              <span>и доказали, что положительный эффект от использования приложения длится</span>
+              целые сутки!
             </p>
             <a class="effect__link" href="#">Узнать больше об исследовании</a>
           </div>
@@ -124,7 +128,7 @@
         <h2 class="visually-hidden">Отзывы пользователей</h2>
         <div class="reviews__wrapper slider">
           <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item reviews__item--visible slider__item">
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Николай Петров</cite>
                 <span class="reviews__author-age">25 лет, водитель трамвая</span>
@@ -155,9 +159,9 @@
             </blockquote>
           </div>
           <div class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <span class="slider__toggle slider__toggle--current"></span>
+            <span class="slider__toggle"></span>
+            <span class="slider__toggle"></span>
           </div>
         </div>
       </div>
@@ -231,10 +235,10 @@
               </tr>
             </tbody>
           </table>
-          <div class="tariffs__toggles toggles">
-            <button class="toggles__button toggles__button--current" type="button">1</button>
-            <button class="toggles__button" type="button">2</button>
-            <button class="toggles__button" type="button">3</button>
+          <div class="reviews__toggles slider__toggles">
+            <span class="slider__toggle"></span>
+            <span class="slider__toggle slider__toggle--current"></span>
+            <span class="slider__toggle"></span>
           </div>
         </div>
       </div>
@@ -269,9 +273,7 @@
   <footer class="footer">
     <div class="centerer-wrapper footer-wrapper">
       <p class="footer__logo">
-        <a class="footer__link">
-          <img class="footer__img" src="img/logotype-blue-tablet.svg" alt="logo-footer" width="145" height="40">
-        </a>
+        <a class="footer__link"></a>
       </p>
       <section class="footer__social">
         <h3 class="visually-hidden">Социальные сети</h3>
@@ -299,15 +301,15 @@
 
         <a class="footer-developer__link" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Перейти на сайт разработчика">
-          <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"
-              fill="#D22856" />
+              d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />
           </svg>
         </a>
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

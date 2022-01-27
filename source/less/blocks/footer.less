@@ -12,11 +12,21 @@
 
 .footer__link {
   display: block;
-}
-
-.footer__img {
-  display: block;
+  height: 40px;
+  width: 145px;
   margin: 0 auto;
+  background-image: url("/img/logotype-blue-tablet.svg");
+  background-size: 145px 40px;
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-image: url("/img/logotype-purple.svg");
+  }
+
+  &:active {
+    background-image: url("/img/logotype-blue-tablet.svg");
+    opacity: 0.3;
+  }
 }
 
 .footer__social-list {

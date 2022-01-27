@@ -1,5 +1,22 @@
 .logo {
   display: block;
+  height: 40px;
+  width: 145px;
+  background-image: url("/img/logotype-white.svg");
+  background-size: 145px 40px;
+  background-repeat: no-repeat;
+
+  @media (min-width: @desktop-width) {
+    background-image: url("/img/logotype-white-desktop.svg");
+  }
+
+  &:hover {
+    background-image: url("/img/logotype-purple.svg");
+  }
+
+  &:active {
+    background-image: url("/img/logo-down.svg");
+  }
 }
 
 .logo__img {

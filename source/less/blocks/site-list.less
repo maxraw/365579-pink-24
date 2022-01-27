@@ -12,16 +12,56 @@
   list-style-type: none;
 
   a {
+    position: relative;
     display: block;
+    padding: 25px 0;
     color: @white;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
+    background-color: @granite-gray;
+    box-shadow: 0 1px 0 @black, inset 0 1px 0 @black-a1;
 
     @media (min-width: @desktop-width) {
+      padding: 48px 0;
       text-transform: none;
       font-weight: 400;
       font-size: 18px;
       line-height: 18px;
+      background-color: inherit;
+      box-shadow: none;
+    }
+
+    &:hover {
+      color: @bright-purplish-red;
+    }
+
+    &:active {
+      color: @bright-purplish-red-a3;
+
+      @media (min-width: @desktop-width) {
+        color: @white-a3;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 48px;
+  }
+
+  &--current {
+    position: relative;
+
+    &::after {
+      @media (min-width: @desktop-width) {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: @white;
+      }
     }
   }
 }

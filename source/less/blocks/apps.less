@@ -22,6 +22,19 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    width: 300px;
+  }
+
+  &:hover {
+    color: @bright-purplish-red;
+    background-color: @white;
+    box-shadow: 0 5px 7px @black-a7;
+  }
+
+  &:active {
+    color: @bright-purplish-red-a3;
+    background-color: @white;
+    box-shadow: 0 5px 7px @black-a7;
   }
 }
 
@@ -31,10 +44,12 @@
   width: 260px;
   margin: 0 auto;
   margin-top: 32px;
-  margin-bottom: 28px;
+  margin-bottom: 31px;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    margin: 38px 0;
+    margin-top: 51px;
+    justify-content: space-around;
   }
 }
 
@@ -62,6 +77,7 @@
 
 .apps__description {
   margin: auto;
+  padding-bottom: 38px;
   width: 280px;
   font-weight: 300;
   font-size: 14px;
@@ -70,6 +86,9 @@
   color: @white;
 
   @media (min-width: @tablet-width) {
+    width: 300px;
     margin: 0;
+    padding-bottom: 98px;
+    font-size: 18px;
   }
 }

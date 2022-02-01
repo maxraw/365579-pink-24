@@ -80,29 +80,35 @@
       </div>
       <div class="info__detals">
         <div class="centerer-wrapper info__wrapper-detals">
-          <section class="info__block info__mood info-description">
-            <img class="info__img info__img--phone-white" src="img/phone-white.png" alt="Телефон с примером фильтра"
-              width="186" height="382">
-            <h3 class="info-description__title">Поднимает настроение</h3>
-            <p class="info-description__text">
+          <section class="info__block info__mood">
+            <div class="info__wrap-img">
+              <img class="info__img info__img--phone-white" src="img/phone-white.png" alt="Телефон с примером фильтра"
+                width="186" height="382">
+            </div>
+            <h3 class="info__description-title">Поднимает настроение</h3>
+            <p class="info__description-text">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в
               несколько кликов!
             </p>
           </section>
-          <section class="info__block info__world info-description">
-            <img class="info__img info__img--phone-sideburns" src="img/phone-sideburns.png"
-              alt="Телефон с примером фильтра" width="186" height="382">
-            <h3 class="info-description__title">Меняет мир вокруг</h3>
-            <p class="info-description__text">
+          <section class="info__block info__world">
+            <div class="info__wrap-img">
+              <img class="info__img info__img--phone-sideburns" src="img/phone-sideburns.png"
+                alt="Телефон с примером фильтра" width="186" height="382">
+            </div>
+            <h3 class="info__description-title">Меняет мир вокруг</h3>
+            <p class="info__description-text">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
               эффект
             </p>
           </section>
-          <section class="info__block info__friends info-description">
-            <img class="info__img info__img--phone-detals" src="img/phone-detals.png" alt="Телефон с примером фильтра"
-              width="157" height="320">
-            <h3 class="info-description__title">Заводит новых друзей</h3>
-            <p class="info-description__text">
+          <section class="info__block info__friends">
+            <div class="info__wrap-img">
+              <img class="info__img info__img--phone-detals" src="img/phone-detals.png" alt="Телефон с примером фильтра"
+                width="157" height="320">
+            </div>
+            <h3 class="info__description-title">Заводит новых друзей</h3>
+            <p class="info__description-text">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </section>
@@ -112,10 +118,10 @@
         <div class="centerer-wrapper effect__wrapper">
           <img class="effect__img" src="img/timer.svg" alt="Таймер" width="238" height="276">
           <div class="effect__description">
-            <h2 class="effect__title">Эффект на 24 часа!</h2>
+            <h2 class="effect__title">Эффект на&nbsp;24&nbsp;часа!</h2>
             <p class="effect__text">
               Британские ученые провели исследования
-              <span>и доказали, что положительный эффект от использования приложения длится</span>
+              и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится
               целые сутки!
             </p>
             <a class="effect__link" href="#">Узнать больше об исследовании</a>
@@ -167,79 +173,77 @@
       </div>
     </section>
     <section class="tariffs">
-      <div class="centerer-wrapper">
+      <div class="centerer-wrapper tariffs__wrapper">
         <h2 class="visually-hidden">Виды тарифов</h2>
-        <div class="tariffs__wrapper">
-          <table class="tariffs-table">
-            <thead class="tariffs-table__head">
-              <tr>
-                <th class="tariffs-table__type">
+        <table class="tariffs-table">
+          <thead class="tariffs-table__head">
+            <tr>
+              <th class="tariffs-table__type">
 
-                </th>
-                <th class="tariffs-table__type">
-                  База
-                  <span>1,99 USD</span>
-                </th>
-                <th class="tariffs-table__type">
-                  Стандарт
-                  <span>3,99 USD</span>
-                </th>
-                <th class="tariffs-table__type">
-                  Анлим
-                  <span>9,99 USD</span>
-                </th>
-              </tr>
-            </thead>
-            <tbody class="tariffs-table__body">
-              <tr>
-                <td class="tariffs-table__cell tariffs-table__cell--check">
-                  Розовый фильтр
-                </td>
-                <td class="tariffs-table__cell tariffs-table__cell--check">
-
-                </td>
-                <td class="tariffs-table__cell tariffs-table__cell--check">
-
-                </td>
-                <td class="tariffs-table__cell tariffs-table__cell--check">
-
-                </td>
-              </tr>
-              <tr>
-                <td class="tariffs-table__cell tariffs-table__cell--check">
-                  Смайлики
-                </td>
-                <td class="tariffs-table__cell tariffs-table__cell--check">
-
-                </td>
-                <td class="tariffs-table__cell tariffs-table__cell--check">
-
-                </td>
-                <td class="tariffs-table__cell tariffs-table__cell--check">
-
-                </td>
-              </tr>
-              <tr>
-                <td class="tariffs-table__cell">
-                  Комментарии
-                </td>
-                <td class="tariffs-table__cell tariffs-table__cell--check">
-
-                </td>
-                <td class="tariffs-table__cell tariffs-table__cell--check">
-
-                </td>
-                <td class="tariffs-table__cell tariffs-table__cell--check">
-
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="reviews__toggles slider__toggles">
-            <span class="slider__toggle"></span>
-            <span class="slider__toggle slider__toggle--current"></span>
-            <span class="slider__toggle"></span>
-          </div>
+              </th>
+              <th class="tariffs-table__type">
+                База
+                <span>1,99 USD</span>
+              </th>
+              <th class="tariffs-table__type tariffs-table__type--hit">
+                Стандарт
+                <span>3,99 USD</span>
+              </th>
+              <th class="tariffs-table__type">
+                Анлим
+                <span>9,99 USD</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="tariffs-table__body">
+            <tr>
+              <td class="tariffs-table__cell">
+                Розовый фильтр
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+                <span>Розовый фильтр</span>
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+                <span>Розовый фильтр</span>
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+                <span>Розовый фильтр</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__cell">
+                Смайлики
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--uncheck">
+                <span>Смайлики</span>
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+                <span>Смайлики</span>
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+                <span>Смайлики</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__cell">
+                Комментарии
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--uncheck">
+                <span>Комментарии</span>
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--uncheck">
+                <span>Комментарии</span>
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+                <span>Комментарии</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="tariffs__toggles tariffs__slider-toggles">
+          <span class="tariffs__slider-toggle"></span>
+          <span class="tariffs__slider-toggle tariffs__slider-toggle--current"></span>
+          <span class="tariffs__slider-toggle"></span>
         </div>
       </div>
     </section>

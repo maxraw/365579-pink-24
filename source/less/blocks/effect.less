@@ -29,13 +29,25 @@
 
 .effect__title {
   margin: 0;
+  width: 168px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+
+  @media (min-width: @desktop-width) {
+    width: 298px;
+    line-height: 30px;
+  }
 }
 
 .effect__text {
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    width: 534px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .effect__link {

@@ -1,6 +1,13 @@
 .tariffs-table {
-  width: 900px;
-  margin: 0 auto;
+  width: 350%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-62.5%);
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    transform: translateX(-50%);
+  }
 }
 
 .tariffs-table__head {
@@ -11,14 +18,62 @@
 }
 
 .tariffs-table__type {
-  border-left: 2px solid @light-grey;
-  border-right: 2px solid @light-grey;
+  padding-top: 19px;
+  padding-bottom: 25px;
 
   span {
     display: block;
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  &:first-of-type {
+    background-color: @light-grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 16px;
+  }
+}
+
+.tariffs-table__type--hit {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 74px;
+    z-index: 0;
+    background-image: linear-gradient(-45deg, transparent 50%, #d22856 50%, #d22856 80%, transparent 80%);
+
+    @media (min-width: @tablet-width) {
+      width: 61px;
+      height: 61px;
+    }
+  }
+
+  &::after {
+    content: "ХИТ";
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    width: 74px;
+    height: 74px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    z-index: 1;
+    transform: rotate(-45deg);
+
+    @media (min-width: @tablet-width) {
+      top: 0;
+      width: 61px;
+      height: 61px;
+    }
   }
 }
 
@@ -28,4 +83,66 @@
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
+
+  span {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 152px;
+    text-transform: none;
+    padding-left: 15px;
+  }
+}
+
+.tariffs-table__cell--check,
+.tariffs-table__cell--uncheck {
+  position: relative;
+  padding: 24px 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    top: 20px;
+    right: 16px;
+    background-image: url("../img/icons/yes-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media (min-width: @tablet-width) {
+      top: 10px;
+      right: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 100px;
+    }
+  }
+}
+
+.tariffs-table__cell--uncheck {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 20px;
+    right: 16px;
+    background-image: url("../img/icons/no-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media (min-width: @tablet-width) {
+      top: 10px;
+      right: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 100px;
+    }
+  }
 }

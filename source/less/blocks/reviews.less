@@ -82,3 +82,27 @@
     font-size: 18px;
   }
 }
+
+.reviews__toggles-left {
+  width: 41px;
+  height: 41px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  position: relative;
+  appearance: none;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 41px;
+    mask-image: url("../img/icons/left-arrow.svg");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+}
